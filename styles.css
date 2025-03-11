@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    max-width: 200px;
+}
+
+h1 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.signup-container, .login-container, .dashboard-container, .pricing-container, .payment-container, .withdrawal-container, .terms-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signup-form, .login-form, .dashboard-container form, .pricing-container form, .payment-container form, .withdrawal-container form {
+    margin: 0 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

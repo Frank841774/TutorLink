@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing for Assignments</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Website Logo" class="logo">
+    </header>
+    <h1>Pricing for Assignments</h1>
+    <div class="pricing-container">
+        <form action="/set-price" method="POST">
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="title" required>
+            <label for="assignment-description">Description:</label>
+            <textarea id="assignment-description" name="description" required></textarea>
+            <label for="assignment-price">Price:</label>
+            <input type="number" id="assignment-price" name="price" required>
+            <button type="submit">Set Price</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Website Logo" class="logo">
+    </header>
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard-container">
+        <h2>Commission Details</h2>
+        <div id="commission-details">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+        <h2>Withdraw Commissions</h2>
+        <form id="stripe-withdrawal-form" action="/admin/withdraw/stripe" method="POST">
+            <label for="stripe-amount">Amount:</label>
+            <input type="number" id="stripe-amount" name="amount" required>
+            <label for="stripe-account-id">Stripe Account ID:</label>
+            <input type="text" id="stripe-account-id" name="stripeAccountId" required>
+            <button type="submit">Withdraw via Stripe</button>
+        </form>
+        <form id="paypal-withdrawal-form" action="/admin/withdraw/paypal" method="POST">
+            <label for="paypal-amount">Amount:</label>
+            <input type="number" id="paypal-amount" name="amount" required>
+            <label for="paypal-email">PayPal Email:</label>
+            <input type="email" id="paypal-email" name="paypalEmail" required>
+            <button type="submit">Withdraw via PayPal</button>
+        </form>
+    </div>
+</body>
+</html>

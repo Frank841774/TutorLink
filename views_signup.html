@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Website Logo" class="logo">
+    </header>
+    <h1>Sign Up</h1>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Student Sign Up</h2>
+            <form action="/signup/student" method="POST">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="name" required>
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" name="email" required>
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="signup-form">
+            <h2>Tutor Sign Up</h2>
+            <form action="/signup/tutor" method="POST">
+                <label for="tutor-name">Name:</label>
+                <input type="text" id="tutor-name" name="name" required>
+                <label for="tutor-email">Email:</label>
+                <input type="email" id="tutor-email" name="email" required>
+                <label for="tutor-password">Password:</label>
+                <input type="password" id="tutor-password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
